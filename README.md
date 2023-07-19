@@ -17,7 +17,7 @@ format for ONT sequencers and is preferred for optimal performance by the Dorado
 
 Basecalling is the process of converting raw sequencer output files into nucleotide sequences. There are several basecallers that can perform this task but the main 
 ones we are using are 'Guppy' and 'Dorado', which are both developed by Oxford Nanopore Technologies. Guppy is an older basecaller that can be run on either CPUs or 
-GPUs while Dorado is a newer tool that is still under development (current version 0.3.2, July 2023) that is designed to utilise GPUs. Dorado is also optimised for use 
+GPUs while Dorado is a newer tool that is still under development (current version 0.3.2+d8660a3, 19th July 2023) that is designed to utilise GPUs. Dorado is also optimised for use 
 on newer Apple Silicon processors. 
 
 ###
