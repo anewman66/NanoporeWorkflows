@@ -2,6 +2,8 @@
 
 # Basecalling script using latest version of Dorado
 # Designed to be pretty straightforward and minimise mistakes stemming from confusing basecalling model names.
+# Script takes 2 inputs: First is the directory of the POD5 files (note: NOT the path to the POD5 file itself).
+# Second is the name of the sample output. 
 
 start=`date +%s`
 echo -e
@@ -45,7 +47,7 @@ esac
 
 touch "$2"_260bpsHAC4.1.0.bam
 
-#dorado basecaller models/dna_r10.4.1_e8.2_260bps_hac@v4.1.0 $1 > "$2"_260bpsHAC4.1.0.bam
+dorado basecaller models/dna_r10.4.1_e8.2_260bps_hac@v4.1.0 $1 > "$2"_260bpsHAC4.1.0.bam
 
 end=`date +%s`
 
