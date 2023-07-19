@@ -1,11 +1,11 @@
 # NanoporeWorkflows
-My repository for scripts and workflows revolving around Nanopore sequencing. Scripts in this location will be more general, while major projects will likely have their own. 
+My repository for scripts and workflows revolving around Nanopore sequencing. Scripts in this location will be more general, while major projects will likely have their own repositories with bespoke scripts and pipelines. 
 
 
 ## Introduction
 
 The primary workflow begins from FAST5 raw sequencing data from a Nanopore sequencer. This pipeline is tested on data from an Oxford Nanopore MinION MK1C with a R 
-10.4.1 flowcell. 
+10.4.1 flowcell using Adaptive Sampling. 
 
 ## Input files
 
