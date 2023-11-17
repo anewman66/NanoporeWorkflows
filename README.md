@@ -13,6 +13,10 @@ FAST5 files are the standard output for the MinION MK1C when basecalling is not 
 Sampling technique. Basecalling with Adaptive Sampling is disabled by default due to the computational limitations of the onboard GPU. POD5 is an alternative file 
 format for ONT sequencers and is preferred for optimal performance by the Dorado basecaller. 
 
+To convert fast5 files to pod5, simply install the pod5 tool (https://github.com/nanoporetech/pod5-file-format/releases), and then use the following code:
+
+`pod5 convert fast5 /path/to/fast5/ -o /path/to/output/file.pod5`
+
 ## Basecalling
 
 Basecalling is the process of converting raw sequencer output files into nucleotide sequences. There are several basecallers that can perform this task but the main 
